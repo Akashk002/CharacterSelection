@@ -168,6 +168,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7098323572877339397}
+  materialList:
+  - {fileID: 6186002042050307752}
+  - {fileID: 6186002042050307754}
 --- !u!54 &7098323572877339397
 Rigidbody:
   m_ObjectHideFlags: 0
