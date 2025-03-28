@@ -6,16 +6,11 @@ public class TankSpawner : MonoBehaviour
 {
     public TankView tankView;
     public List<Tank> tankList;
-    // Start is called before the first frame update
-    void Start()
-    {
-        CreateTank();
-    }
 
     // Update is called once per frame
-    void CreateTank()
+    public void CreateTank(TankType tankType)
     {
-        TankModel tankModel = new TankModel(tankList[0].movementSpeed,tankList[0].rotaionSpeed,tankList[0].tankType,tankList[0].color);
+        TankModel tankModel = new TankModel(tankList[(int)tankType].movementSpeed,tankList[(int)tankType].rotaionSpeed,tankList[(int)tankType].tankType,tankList[(int)tankType].color);
         TankController tankController = new TankController(tankModel,tankView);
     }
 
