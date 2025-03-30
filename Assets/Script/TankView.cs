@@ -9,6 +9,8 @@ public class TankView : MonoBehaviour
     float movement,rotaion;
     public Rigidbody rb;
     public MeshRenderer[] materialList;
+    public GameObject bullet;
+    public Transform spawnPoint;
     private void Start()
     {
         GameObject cam = GameObject.Find("Main Camera");
@@ -18,6 +20,15 @@ public class TankView : MonoBehaviour
     private void Update()
     {
         Movement();
+        Fire();
+    }
+
+    private void Fire()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            tankController.Fire();
+        }
     }
 
     private void Movement()
@@ -38,6 +49,15 @@ public class TankView : MonoBehaviour
     public Rigidbody GetRigidbody()
     {
         return rb;
+    } 
+    
+    public GameObject GetBullet()
+    {
+        return bullet;
+    }  
+    public Transform GetSpawnPoint()
+    {
+        return spawnPoint;
     }
 
     public void ChangeColor(Material _color)

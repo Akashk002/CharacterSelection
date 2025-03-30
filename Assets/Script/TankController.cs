@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TankController 
@@ -33,4 +34,9 @@ public class TankController
         return tankModel;
     }
 
+    public void Fire()
+    {
+        GameObject bullet = GameObject.Instantiate(tankView.GetBullet(), tankView.GetSpawnPoint().position, tankView.GetSpawnPoint().rotation);
+        bullet.GetComponent<Rigidbody>().AddForce(tankView.GetSpawnPoint().forward * 1000);
+    }
 }
