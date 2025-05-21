@@ -1257,15 +1257,15 @@ MonoBehaviour:
     type: 3}
   tankList:
   - movementSpeed: 5
-    rotaionSpeed: 30
+    rotaionSpeed: 40
     tankType: 0
     color: {fileID: 2100000, guid: c39933e60e73205419d1f79a2af1fdac, type: 2}
-  - movementSpeed: 30
-    rotaionSpeed: 30
+  - movementSpeed: 6
+    rotaionSpeed: 40
     tankType: 1
     color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
-  - movementSpeed: 30
-    rotaionSpeed: 30
+  - movementSpeed: 7
+    rotaionSpeed: 40
     tankType: 2
     color: {fileID: 2100000, guid: 463052f3f7389124f9e7b34b0b931d0d, type: 2}
 --- !u!4 &1914531628
